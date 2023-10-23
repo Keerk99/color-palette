@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import "./style.css";
 import ColorCard from "../Card";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { RiProhibitedLine } from "react-icons/ri";
 
 export default function Main() {
   const urlColors = "https://reqres.in/api/colors";
@@ -48,7 +50,7 @@ export default function Main() {
 
     setTimeout(() => {
       setIsModalOpen(false);
-    }, 500);
+    }, 800);
   };
 
   const limitPrevButton = page === 1;
@@ -92,10 +94,10 @@ export default function Main() {
             disabled={limitPrevButton}
           >
             {limitPrevButton ? (
-              <i className="fa-solid fa-ban"></i>
+              <RiProhibitedLine />
             ) : (
               <>
-                <i className="fa-solid fa-chevron-left"></i> Prev
+                <IoIosArrowBack /> Prev
               </>
             )}
           </button>
@@ -105,10 +107,10 @@ export default function Main() {
             disabled={limitNextButton}
           >
             {limitNextButton ? (
-              <i className="fa-solid fa-ban"></i>
+              <RiProhibitedLine />
             ) : (
               <>
-                Next <i className="fa-solid fa-chevron-right"></i>
+                Next <IoIosArrowForward />
               </>
             )}
           </button>

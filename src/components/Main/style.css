@@ -39,10 +39,29 @@
 }
 
 .modal__copied {
+    align-self: center;
+    display: block;
     text-align: center;
     color: #FFFFFF;
     font-size: 3rem;
     font-weight: 400;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 7ch;
+    animation: typing .5s steps(7), blink .3s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .modal__pantone {
@@ -67,10 +86,15 @@
     border-radius: .5rem;
     color: #FFFFFF;
     outline: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button__disabled {
     background: #707777a9;
+
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
