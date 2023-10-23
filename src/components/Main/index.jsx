@@ -42,7 +42,7 @@ export default function Main() {
     navigator.clipboard
       .writeText(color)
       .then(() => {
-        // Color copied to the clipboard successfully!
+        //Color copied to the clipboard successfully!
       })
       .catch((err) => {
         console.error("Error copying the color to the clipboard:", err);
