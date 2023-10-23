@@ -1,0 +1,39 @@
+.container__footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: #2d2e2e;
+    color: #FFFFFF;
+}
+
+.copyright,
+.copyright__span {
+    margin: 0;
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+    .copyright,
+    .copyright__span {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .copyright,
+    .copyright__span {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 424px) {
+    .container__footer {
+        padding: 1rem;
+    }
+
+    .copyright,
+    .copyright__span {
+        font-size: .5rem;
+    }
+}

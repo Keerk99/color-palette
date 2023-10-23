@@ -1,0 +1,77 @@
+.card {
+    list-style: none;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform ease .2s;
+}
+
+.card:hover {
+    transform: scale(0.99);
+}
+
+.card__year {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card__name {
+    font-weight: 300;
+}
+
+.card__name,
+.card__color {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.card__color {
+    font-weight: 500;
+}
+
+.card__pantone {
+    margin: 0;
+    text-align: end;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .card__year,
+    .card__name,
+    .card__color,
+    .card__pantone {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .card__year,
+    .card__name,
+    .card__color,
+    .card__pantone {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 424px) {
+
+    .card__year,
+    .card__name,
+    .card__color,
+    .card__pantone {
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,103 @@
+.color__container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    flex-grow: 1;
+    margin: 0;
+    position: relative;
+}
+
+.modal__container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+}
+
+.modal {
+    margin: 1rem 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.modal__year {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem 0 0 1rem;
+    font-weight: 300;
+}
+
+.modal__copied {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.modal__pantone {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin: 0 1rem 1rem 0;
+    text-align: end;
+    font-weight: 300;
+}
+
+.button__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 1rem;
+}
+
+.button {
+    background: #707777;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.button__disabled {
+    background: #707777a9;
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .button {
+        padding: .8rem 1.2rem;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 424px) {
+
+    .card__container {
+        padding: 1rem .5rem;
+        gap: .5rem;
+    }
+
+    .modal {
+        margin: 1rem .5rem;
+    }
+
+    .button__container {
+        margin: 0 .5rem 1rem;
+    }
+
+    .button {
+        font-size: .5rem;
+        padding: .7rem 1rem;
+    }
+}

@@ -1,0 +1,31 @@
+.container__header {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: #2d2e2e;
+    color: #FFFFFF;
+}
+
+.title {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 424px) {
+    .title {
+        font-size: 2rem;
+    }
+}
